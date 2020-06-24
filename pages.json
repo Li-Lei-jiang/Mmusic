@@ -36,6 +36,14 @@
             "path" : "pages/Identification/Identification",
             "style" : {}
         }
+        ,{
+            "path" : "components/popularitySong/popularitySong",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/foreignPopularChoice/foreignPopularChoice",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
