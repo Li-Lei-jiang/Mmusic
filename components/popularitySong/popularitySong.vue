@@ -31,7 +31,7 @@
 					method: 'get',
 					success: (res => {
 						this.popularitySong = res.result;
-						console.log(this.popularitySong)
+						// console.log(this.popularitySong)
 					})
 				})
 			},

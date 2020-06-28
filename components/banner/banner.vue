@@ -6,14 +6,15 @@
 				<swiper-item v-for="(item,index) in banner" :key="index">
 					<view class="banbg">
 						<image :src="item.pic" mode="" class="banimg"></image>
-						<text class="bantex" :style="{'backgroundColor':item.titleColor}">{{item.typeTitle}}</text>
+						<text class="bantex" v-show="item.typeTitle.length<=3" :style="{'backgroundColor':item.titleColor}">{{item.typeTitle}}</text>
+						<text class="bantext" v-show="item.typeTitle.length>3" :style="{'backgroundColor':item.titleColor}">{{item.typeTitle}}</text>
 					</view>
 				</swiper-item>
 			</swiper>
 		</view>
 		<view class="bar">
 			<scroll-view scroll-x="true" class="barScroll" show-scrollbar="false" scroll-with-animation="true">
-				<block v-for="item in navigation">
+				<block v-for="item in navigation" :key="item">
 					<view class="barItem">
 						<text>{{item}}</text>
 					</view>
@@ -94,6 +95,20 @@
 					// background: #40A6F1;
 					color: white;
 					width: 100rpx;
+					text-align: center;
+					// padding-left: 12rpx;
+					// border-radius: 8rpx;
+					border-top-left-radius: 20rpx;
+					border-bottom-right-radius: 20rpx;
+				}
+				.bantext{
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					display: inline-block;
+					// background: #40A6F1;
+					color: white;
+					width: 160rpx;
 					text-align: center;
 					// padding-left: 12rpx;
 					// border-radius: 8rpx;
