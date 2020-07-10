@@ -71,7 +71,7 @@
 					method:'get',
 					success:(res=>{
 						this.Album = res.albums.slice(0,6);
-						console.log(this.Album)
+						// console.log(this.Album)
 					})
 				})
 			},

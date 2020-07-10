@@ -9,22 +9,22 @@
 </template>
 
 <script>
-	import topSearch from '../../components/topSearch/topSearch.vue'
-	import banner from '../../components/banner/banner.vue'
-	import popularitySong from '../../components/popularitySong/popularitySong.vue'
-	import newSongNewAlbum from '../../components/newSongNewAlbum/newSongNewAlbum.vue'
-	import foreignPopularChoice from '../../components/foreignPopularChoice/foreignPopularChoice.vue'
+	// import topSearch from '../../components/topSearch/topSearch.vue'
+	// import banner from '../../components/banner/banner.vue'
+	// import popularitySong from '../../components/popularitySong/popularitySong.vue'
+	// import newSongNewAlbum from '../../components/newSongNewAlbum/newSongNewAlbum.vue'
+	// import foreignPopularChoice from '../../components/foreignPopularChoice/foreignPopularChoice.vue'
 
 	export default {
 		data() {
 			return {}
 		},
 		components: {
-			topSearch,
-			banner,
-			popularitySong,
-			newSongNewAlbum,
-			foreignPopularChoice
+			// topSearch,
+			// banner,
+			// popularitySong,
+			// newSongNewAlbum,
+			// foreignPopularChoice
 		},
 
 	}
@@ -32,6 +32,6 @@
 
 <style>
 .Home{
-	height: 2000px;
+	
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-	<view>
-		aa
+	<view id="login">
+		这是登录页
 	</view>
 </template>
 
@@ -10,6 +10,9 @@
 			return {
 				
 			};
+		},
+		created() {
+			this.goLogin()
 		},
 		methods:{
 			goLogin(){
@@ -21,15 +24,16 @@
 						password:'lilei930309'
 					},
 					success: (res=>{
-					    // console.log(res)
+					   console.log(res)
 						 uni.setStorageSync('adminToken', res.token);
+						  console.log('登录完成')
 					})
 				})
 				
 			},
 		},
 		mounted() {
-			this.goLogin()
+			
 		},
 	}
 </script>

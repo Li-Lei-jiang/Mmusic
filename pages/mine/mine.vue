@@ -1,6 +1,9 @@
 <template>
 	<view>
-		
+		<view class="tip">
+			你没有登录
+			<button type="default" @click="gologion">点我去登录页登录</button>
+		</view>
 	</view>
 </template>
 
@@ -11,8 +14,19 @@
 				
 			}
 		},
+		
 		methods: {
-			
+			gologion(){
+				uni.redirectTo({
+					url:'../login/login',
+					success:(res=>{
+						console.log(res)
+					}),
+					complete:(a=>{
+						console.log(a)
+					})
+				})
+			},
 		}
 	}
 </script>
